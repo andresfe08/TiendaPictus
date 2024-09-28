@@ -1,8 +1,16 @@
 /* Custom Css */
 
-/* Logo Navegacion */
-.text-success {
+/* Navegacion */
+nav#templatemo_nav_top { /*  */
+    display: none!important;
+}
+
+.text-success { /* Logo */
     color: #000000 !important;
+}
+
+li.nav-item { /* Botones de navegacion */
+    display: none;
 }
 
 /* Carrusel */
