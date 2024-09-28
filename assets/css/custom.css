@@ -1,4 +1,4 @@
-/* Custom Css */
+/* Custom Css
 
 /* Boton () */
 
@@ -7,25 +7,6 @@ nav#templatemo_nav_top, #templatemo_main_nav .navbar-nav { /*  */
     display: none !important;
 }
 
-.text-success { /* Logo */
-    color: #000000 !important;
-}
-
 li.nav-item { /* Botones de navegacion */
     display: none;
-}
-
-/* Carrusel */
-#template-mo-zay-hero-carousel .carousel-control-next i, #template-mo-zay-hero-carousel .carousel-control-prev i {
-    color: #000000 !important;
-}
-
-#template-mo-zay-hero-carousel .carousel-indicators li{
-    background-color: #000000;
-}
-
-/* Categorias */
-.btn-success{
-    background-color: #000000 !important;
-    border-color: #000000 !important;
 }
