@@ -1,3 +1,21 @@
-/*
-Custom Css
-*/
+/* Custom Css */
+
+/* Logo Navegacion */
+.text-success {
+    color: #000000 !important;
+}
+
+/* Carrusel */
+#template-mo-zay-hero-carousel .carousel-control-next i, #template-mo-zay-hero-carousel .carousel-control-prev i {
+    color: #000000 !important;
+}
+
+#template-mo-zay-hero-carousel .carousel-indicators li{
+    background-color: #000000;
+}
+
+/* Categorias */
+.btn-success{
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
