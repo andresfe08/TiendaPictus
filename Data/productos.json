@@ -1,29 +1,53 @@
 [
     {
-        "nombre": "Producto 1",
-        "img": "assets/img/shop_01.jpg",
-        "precio": "$250.00",
-        "colores": [
-            { "nombre": "Blanco", "codigo": "#FFFFFF", "seleccionado": true },
-            { "nombre": "Negro", "codigo": "#000000", "seleccionado": false }
-        ]
+      "id": 1,
+      "title": "Producto 1",
+      "image1": "./assets/img/imagen1-1.jpg",
+      "image2": "./assets/img/imagen1-2.jpg",
+      "price": 10.99,
+      "options": [
+        {
+          "id": 1,
+          "value": "opcion1"
+        },
+        {
+          "id": 2,
+          "value": "opcion2"
+        }
+      ]
     },
     {
-        "nombre": "Producto 2",
-        "img": "assets/img/shop_02.jpg",
-        "precio": "$300.00",
-        "colores": [
-            { "nombre": "Rojo", "codigo": "#FF0000", "seleccionado": false },
-            { "nombre": "Azul", "codigo": "#0000FF", "seleccionado": true }
-        ]
+      "id": 2,
+      "title": "Producto 2",
+      "image1": "./assets/img/imagen2-1.jpg",
+      "image2": "./assets/img/imagen2-2.jpg",
+      "price": 10.99,
+      "options": [
+        {
+          "id": 1,
+          "value": "opcion1"
+        },
+        {
+          "id": 2,
+          "value": "opcion2"
+        }
+      ]
     },
     {
-        "nombre": "Producto 3",
-        "img": "assets/img/shop_03.jpg",
-        "precio": "$350.00",
-        "colores": [
-            { "nombre": "Verde", "codigo": "#00FF00", "seleccionado": false },
-            { "nombre": "Amarillo", "codigo": "#FFFF00", "seleccionado": true }
-        ]
+      "id": 3,
+      "title": "Producto 3",
+      "image1": "./assets/img/imagen3-1.jpg",
+      "image2": "./assets/img/imagen3-2.jpg",
+      "price": 10.99,
+      "options": [
+        {
+          "id": 1,
+          "value": "opcion1"
+        },
+        {
+          "id": 2,
+          "value": "opcion2"
+        }
+      ]
     }
-]
+  ]

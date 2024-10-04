@@ -7,6 +7,28 @@ li.nav-item { /* Botones de navegacion */
     display: none;
 }
 
+/* Modificación del efecto overlay de la tarjeta de producto */
+.card {
+  position: relative;
+  z-index: 1;
+}
+
+.card img {
+  position: relative;
+  z-index: 2;
+}
+
+.card input[type="checkbox"] {
+  position: relative;
+  z-index: 3;
+}
+
+.card img:hover ~ .card-img-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /* Checkbox */
 /* Ocultar el radio button original */
 .custom-radio-input {

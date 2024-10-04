@@ -1,5 +1,5 @@
 // URL del archivo JSON
-const urlJson = 'tu-archivo.json';
+const urlJson = './data/productos.json';
 
 // Función para leer el contenido del archivo JSON
 fetch(urlJson)
@@ -13,7 +13,7 @@ fetch(urlJson)
         <div class="col-md-4">
           <div class="card mb-4 product-wap rounded-0">
             <div class="card rounded-0">
-              <img class="card-img rounded-0 img-fluid" src="${card.image}">
+              <img class="card-img rounded-0 img-fluid" src="${card.image1}">
               <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                 <ul class="list-unstyled">
                   <li><a class="btn btn-success text-white" href="shop-single.html"><i class="far fa-heart"></i></a></li>
@@ -63,6 +63,8 @@ fetch(urlJson)
         </div>
       `;
       cardsContainer.innerHTML += cardHTML;
+      const image = document.querySelector(`#cards-container .col-md-4:nth-child(${cardsData.indexOf(card) + 1}) .card-img`);
+      image.src = card.image1;
     });
 
     // Agrega eventos a los checkboxes
@@ -75,7 +77,12 @@ fetch(urlJson)
         const option = card.options.find(option => option.id === parseInt(optionId));
         const image = document.querySelector(`#cards-container .col-md-4:nth-child(${cardId}) .card-img`);
         image.src = option.value === 'opcion1' ? card.image1 : card.image2;
+        console.log(`Opción ${optionId} seleccionada para el producto ${card.title}`);
       });
     });
   })
   .catch(error => console.error('Error:', error));
+
+console.log('URL del archivo JSON:', urlJson);
+console.log('cardsData:', cardsData);
+console.log('cardHTML:', cardHTML);
