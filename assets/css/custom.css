@@ -1,12 +1,73 @@
-/* Custom Css
-
-/* Boton () */
-
 /* Navegacion */
 nav#templatemo_nav_top, #templatemo_main_nav .navbar-nav { /*  */
     display: none !important;
 }
 
 li.nav-item { /* Botones de navegacion */
+    display: none;
+}
+
+/* Checkbox */
+/* Ocultar el radio button original */
+.custom-radio-input {
+    display: none; /* Oculta el botón original */
+}
+
+/* Estilos para el círculo del radio button */
+.custom-radio-label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px; /* Tamaño del círculo ajustado a 25px */
+    height: 25px; /* Tamaño del círculo ajustado a 25px */
+    border-radius: 50%; /* Mantener forma circular */
+    border: 3px solid #ccc; /* Borde por defecto */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    position: relative; /* Posición relativa para el pseudo-elemento */
+    margin-right: 15px; /* Espacio entre botones */
+    background-color: transparent; /* Sin fondo por defecto */
+}
+
+/* Estilo para el círculo blanco*/
+.custom-radio-input1 + .custom-radio-label {
+    background-color: white; /* Fondo blanco cuando está seleccionado */
+}
+
+/* Estilo para el círculo negro*/
+.custom-radio-input2 + .custom-radio-label {
+    background-color: black; /* Fondo negro cuando está seleccionado */
+}
+
+/* Estilo para el círculo blanco CHECKED */
+.custom-radio-input1:checked + .custom-radio-label {
+    background-color: white; /* Fondo blanco cuando está seleccionado */
+    border-color: #FF914D; /* Borde naranja al seleccionar */
+}
+
+/* Estilo para el círculo negro CHECKED */
+.custom-radio-input2:checked + .custom-radio-label {
+    background-color: black; /* Fondo negro cuando está seleccionado */
+    border-color: #FF914D; /* Borde naranja al seleccionar */
+}
+
+/* Relleno para el radio button seleccionado */
+.custom-radio-input1:checked + .custom-radio-label::before,
+.custom-radio-input2:checked + .custom-radio-label::before {
+    content: ''; /* Contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posición absoluta para superponer */
+    top: 50%; /* Centrando verticalmente */
+    left: 50%; /* Centrando horizontalmente */
+    width: 100%; /* Ocupa el 100% del tamaño del label */
+    height: 100%; /* Ocupa el 100% del tamaño del label */
+    border-radius: 50%; /* Mantener forma circular */
+    background-color: inherit; /* Hereda el color de fondo */
+    transform: translate(-50%, -50%); /* Centrando */
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del label */
+}
+
+/* Fin Checkbox */
+
+/* Estrellas de calificación */
+.card-body .list-unstyled, .card-body .calificacion{
     display: none;
 }

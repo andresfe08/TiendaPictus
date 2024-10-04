@@ -1,0 +1,10 @@
+COLORES
+Verde No.1 #59ab6e      #FF914D
+Verde No.2 #56ae6c      #FFB380
+Verde No.3 #69bb7e      #CC743C
+
+#FF914D
+#FFB380
+#CC743C
+
+<ul class="calificacion list-unstyled d-flex justify-content-center mb-1">

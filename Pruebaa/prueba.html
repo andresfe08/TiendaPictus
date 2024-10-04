@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones de Opción Personalizados</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Ocultar el radio button original */
+        .form-check-input {
+            display: none; /* Oculta el botón original */
+        }
+
+        /* Estilos para el círculo del radio button */
+        .form-check-label {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px; /* Tamaño del círculo */
+            height: 40px; /* Tamaño del círculo */
+            border-radius: 50%; /* Mantener forma circular */
+            border: 3px solid #ccc; /* Borde por defecto */
+            cursor: pointer; /* Cambia el cursor al pasar por encima */
+            position: relative; /* Posición relativa para el pseudo-elemento */
+            margin-right: 15px; /* Espacio entre botones */
+            background-color: transparent; /* Sin fondo por defecto */
+        }
+
+        /* Estilo para el círculo blanco */
+        #flexRadioDefault1:checked + .form-check-label {
+            background-color: white; /* Fondo blanco cuando está seleccionado */
+            border-color: #FF914D; /* Borde naranja al seleccionar */
+        }
+
+        /* Estilo para el círculo negro */
+        #flexRadioDefault2:checked + .form-check-label {
+            background-color: black; /* Fondo negro cuando está seleccionado */
+            border-color: #FF914D; /* Borde naranja al seleccionar */
+        }
+
+        /* Relleno para el radio button seleccionado */
+        #flexRadioDefault1:checked + .form-check-label::before,
+        #flexRadioDefault2:checked + .form-check-label::before {
+            content: ''; /* Contenido vacío para el pseudo-elemento */
+            position: absolute; /* Posición absoluta para superponer */
+            top: 50%; /* Centrando verticalmente */
+            left: 50%; /* Centrando horizontalmente */
+            width: 100%; /* Ocupa el 100% del tamaño del label */
+            height: 100%; /* Ocupa el 100% del tamaño del label */
+            border-radius: 50%; /* Mantener forma circular */
+            background-color: inherit; /* Hereda el color de fondo */
+            transform: translate(-50%, -50%); /* Centrando */
+            z-index: -1; /* Asegura que el pseudo-elemento esté detrás del label */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Botones de opción múltiple -->
+<div class="container text-center mt-0">
+    <div class="form-check form-check-inline">
+        <input class="custom-radio-input custom-radio-input1" type="radio" name="flexRadioDefault" id="customRadio1" checked>
+        <label class="custom-radio-label" for="customRadio1">Opción 1</label>
+    </div>
+
+    <div class="form-check form-check-inline">
+        <input class="custom-radio-input custom-radio-input2" type="radio" name="flexRadioDefault" id="customRadio2">
+        <label class="custom-radio-label" for="customRadio2">Opción 2</label>
+    </div>
+</div>
+<!-- Fin botones de opción múltiple -->
+
+</body>
+</html>
